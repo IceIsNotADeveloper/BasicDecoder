@@ -1,0 +1,22 @@
+import string
+import random
+
+Concept = {" ": "sae", "a" : "io", "b" : "bu", "c" : "ty", "d" : "jh", "e" : "qe", "f" : "er", "g" : "nb", "h" : "o9i", "i" : "bfa", "j" : "mzx", "k" : "pqb", "l" : "jwr", "m" : "hjm", "n" : "trwa", "o" : "owoa", "p" : "qrst", "q" : "rste", "r" : "idid", "s" : "pooe", "t" : "ffaa", "u" : "koha", "v" : "wxua", "w" : "hhau", "x" : "taps", "y" : "poqsd", "z" : "qrtbm", "A" : "oi", "B" : "ub", "C" : "yt", "D" : "hj", "E" : "eq", "F" : "re", "G" : "bn", "H" : "i9o", "I" : "afb", "J" : "xzm", "K" : "bqp", "L" : "rwj", "M" : "mjh", "N" : "awrt", "O" : "aowo", "P" : "tsrq", "Q" : "etsr", "R" : "iddi", "S" : "eoop", "T" : "aaff", "U" : "ahok", "V" : "auxw", "W" : "uahh", "X" : "spat", "Y" : "dsqop", "Z" : "mbtrq", "!" : "pera", '"' : "earo", "#" : "poya", "$" : "dsolar", "%" : "perfa", "&" : "andea", "'" : "coamhga", "(" : "begai", ")" : "eniga", "*" : "wiarf", "+" : "addeag", ":" : "weiacoma", "-" : "dashuea", "." : "peridoc", "/" : "baoea", ":" : "colaon", ";" : "semafcola", "<" : "youami", "=" : "eqakf", ">" : "weita", "?" : "wha", "@" : "mentio", "[" : "opebar", "]" : "closaga", "^" : "power", "_" : "underyuou", "`" : "qutea", "{" : "opebra", "|" : "pope", "}" : "clostwo", "~" : "about"}
+
+def Called(TOenc):
+    TOenc = list(TOenc)
+    Enc = ""
+    for i in TOenc:
+        for v in Concept:
+            if i == v:
+                Enc = Enc + Concept[i] + "h9"
+                break
+    return str(Enc)
+def Called2(ToDec):
+    dec = ""
+    ToDec = ToDec.split("h9")
+    for i in ToDec:
+        for v in Concept:
+            if i == Concept[v]:
+                dec = dec + v
+    return dec
